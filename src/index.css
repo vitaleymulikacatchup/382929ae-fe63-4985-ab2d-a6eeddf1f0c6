@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.modal-overlay {
+  backdrop-filter: blur(4px);
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, rgba(0, 112, 74, 0.1) 0%, rgba(30, 57, 50, 0.1) 100%);
+}
+
+.product-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  @apply bg-starbucks-green text-white px-6 py-3 rounded-full font-medium hover:bg-starbucks-light-green transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply border-2 border-starbucks-green text-starbucks-green px-6 py-3 rounded-full font-medium hover:bg-starbucks-green hover:text-white transition-all duration-200;
+}
